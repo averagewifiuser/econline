@@ -4,6 +4,7 @@ import os
 class BaseConfig(object):
     basedir = os.path.abspath(os.path.dirname(__file__))
     DEBUG = False
+    FLASK_APP = 'ec-online'
 
 
 class DevelopmentConfig(BaseConfig):
@@ -15,4 +16,6 @@ class TestingConfig(BaseConfig):
     DEBUG = True
     FLASK_ENV = 'testing'
 
+class ProductionConfig(BaseConfig):
+    DEBUG = False
 

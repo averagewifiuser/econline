@@ -5,5 +5,5 @@ main = Blueprint('main', __name__)
 
 #routes
 @main.route("/", methods=['GET'])
-def lhome():
+def home():
     return 'Hello World!'
