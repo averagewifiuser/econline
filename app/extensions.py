@@ -1,3 +1,8 @@
-'''
-This is a where all the extensions in use a placed
-'''
+from distutils.log import Log
+from flask_login import LoginManager
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+
+db = SQLAlchemy()
+login_manager = LoginManager()
+migrate = Migrate()
